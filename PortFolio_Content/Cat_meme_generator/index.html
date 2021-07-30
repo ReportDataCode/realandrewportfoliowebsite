@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Cat meme generator</title>
+    <style>
+        #meme_text {
+            background-color: transparent;
+            font-size: 40px;
+            font-family: "Impact";
+            color: white;
+            text-shadow: black 0px 0px 10px;
+            width: 600px;
+            position: absolute;
+            left: 15px;
+            top: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        Meme text: <input type="text" id="user_id" maxlength="70" oninput="update_text()">
+        Select a picture <input type="file" id="user_picture" onchange="update_image()">
+        <p></p>
+    </form>
+    <div id="meme_text">
+        Example text here!
+    </div>
+    <div id="meme_picture_id">
+        <img src="" alt="" height="500" width="600">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
